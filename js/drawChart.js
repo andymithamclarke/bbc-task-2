@@ -155,7 +155,6 @@ export function drawChart(sortingOption) {
             .attr("height", 16)
             .attr("x", -60)
             .attr("y", -7);
-
     });
 
 }
