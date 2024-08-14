@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FA Cup Final Appearances</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="A visualisation showing the number of FA Cup final appearances English Premier League clubs.">
+  <meta property="og:title" content="FA Cup Final Appearances">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div class="page-layout">
+
+    <header class="page-header">
+      <div class="header-title-container">
+        <h1>FA Cup Final Appearances</h1>
+        <p>This visualisation shows the number of times Premier League clubs - Season 2023/2024 - have appeared in the FA Cup Final.</p>
+      </div>
+
+      <div class="controls-container">
+        <button id="info-button">
+          <img src="assets/img/info.svg" style="width: 20px; height: 20px" alt="info-button">
+        </button>
+        <div class="dropdown-container">
+          <label for="sort-options">Order By:</label>
+          <select  class="dropdown-menu" onfocus="this.selectedIndex = -1;" name="sort-options" id="sort-options">
+            <option class="dropdown-option" value="FA Cup Final Appearances">FA Cup Final Appearances</option>
+            <option class="dropdown-option" value="League Position 23/24">League Position 23/24</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <section class="visualisation-area">
+
+        <svg id="chart-svg">
+          <g id="chart-group"></g>
+        </svg>
+
+    </section>
+
+    <footer class="page-footer">
+      <p>Data from <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">WikiData</a></p>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+
+
+  </div>
+
+</body>
+
+</html>
